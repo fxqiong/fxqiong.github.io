@@ -134,10 +134,7 @@ var CanvasRenderer = function(el, options) {
 		ctx.clearRect(options.size / -2, options.size / -2, options.size, options.size);
 	};
 
-	/**
-	 * Draw the complete chart
-	 * @param  {number} percent Percent shown by the chart between 0 and 100
-	 */
+
 	this.draw = function(percent) {
 		// do we need to render a background
 		if (!!options.scaleColor || !!options.trackColor) {
@@ -200,7 +197,7 @@ var CanvasRenderer = function(el, options) {
 var EasyPieChart = function(el, opts) {
 	var defaultOptions = {
 		barColor: '#2c3e50',
-		trackColor: '#fff',
+		trackColor: '#2C3E50',
 		scaleColor: '#fff',
 		scaleLength: 0,
 		lineCap: 'square',
@@ -276,11 +273,7 @@ var EasyPieChart = function(el, opts) {
 		}
 	}.bind(this);
 
-	/**
-	 * Update the value of the chart
-	 * @param  {number} newValue Number between 0 and 100
-	 * @return {object}          Instance of the plugin for method chaining
-	 */
+
 	this.update = function(newValue) {
 		newValue = parseFloat(newValue);
 		if (options.animate) {

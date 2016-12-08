@@ -441,6 +441,8 @@ ol.type li a:hover {
 	height: 152px;
 	margin-bottom: 26px;
 	text-align: center;
+	border-radius:50% ;
+	font-weight: bold;
 }
 .chart canvas {
 	position: absolute;
@@ -450,15 +452,11 @@ ol.type li a:hover {
 .percent {
 	display: inline-block;
 	font-size: 21px;
-	color: #474d5d;
+	color: #E87E04;
 	line-height: 152px;
 	z-index: 2;
 }
-.percent:after {
-	content: '%';
-	margin-left: 0.1em;
-	font-size: .8em;
-}
+
 /* Resume Section */
 #resume {
 	padding: 80px 0;
